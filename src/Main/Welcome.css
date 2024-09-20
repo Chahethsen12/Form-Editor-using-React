@@ -1,0 +1,144 @@
+/* Reset body and html */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container for welcome screen */
+.welcome-screen {
+    display: flex;
+    height: 100vh;
+    /* Full height of the viewport */
+    width: 100vw;
+    /* Full width of the viewport */
+    background-color: #f5f5f5;
+}
+
+/* Form section */
+.welcome-screen-form {
+    width: 25%;
+    /* Settings panel takes 25% of the screen width */
+    padding: 20px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow-y: auto;
+    /* Allows scrolling if form content overflows */
+}
+
+.welcome-screen-form label {
+    color: black;
+    /* or any contrasting color */
+}
+
+.welcome-screen-form h3 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.welcome-screen-form .form-group {
+    margin-bottom: 15px;
+}
+
+.welcome-screen-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.welcome-screen-form input,
+.welcome-screen-form textarea,
+.welcome-screen-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.welcome-screen-form input[type="file"] {
+    padding: 5px;
+}
+
+.welcome-screen-form button {
+    padding: 10px;
+    background-color: #0e0f11;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.welcome-screen-form button:hover {
+    background-color: #c4c4c4;
+}
+
+.welcome-screen-form .discard-button {
+    padding: 10px;
+    background-color: white;
+    /* White background */
+    color: black;
+    /* Black font color */
+    border: 1px solid #ccc;
+    /* Light border */
+    border-radius: 4px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    font-size: 14px;
+    /* Font size */
+}
+
+
+
+/* Preview section */
+.welcome-screen-preview {
+    flex-grow: 1;
+    /* Takes up the remaining 75% width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.welcome-screen-preview p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.welcome-screen-preview button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.welcome-screen-preview button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Image upload styling */
+.welcome-screen-preview img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+

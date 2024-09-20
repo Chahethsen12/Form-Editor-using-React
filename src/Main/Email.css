@@ -1,0 +1,179 @@
+/* Reset body and html for the email component */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container for email field */
+.email-field {
+    display: flex;
+    height: 100vh;
+    /* Full height of the viewport */
+    width: 100vw;
+    /* Full width of the viewport */
+    background-color: #f5f5f5;
+}
+
+/* Form section for email settings */
+.email-field-form {
+    width: 25%;
+    /* Settings panel takes 25% of the screen width */
+    padding: 20px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow-y: auto;
+    /* Allows scrolling if form content overflows */
+}
+
+.email-field-form h3 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.email-field-form .form-group {
+    margin-bottom: 15px;
+}
+
+.email-field-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: black;
+    /* Or any contrasting color */
+}
+
+.email-field-form input,
+.email-field-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Style for email input specifically */
+.email-field-form input[type="email"] {
+    padding: 8px;
+}
+
+.email-field-form .discard-button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #c4c4c4;
+}
+
+.discard-button:hover {
+    background-color: #c4c4c4;
+}
+
+/* Preview section for real-time email field display */
+.email-field-preview {
+    flex-grow: 1;
+    /* Takes up the remaining 75% width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.email-field-preview h1 {
+    font-size: 24px;
+}
+
+.email-field-preview p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.email-field-preview input[type="email"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    width: 100%;
+}
+
+/* Error message styling */
+.email-field-preview p.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Container for the switch */
+.switch-container {
+    display: flex;
+    align-items: center;
+}
+
+.switch-label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+/* Switch styling */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #007bff;
+}
+
+input:checked+.slider:before {
+    transform: translateX(18px);
+}
